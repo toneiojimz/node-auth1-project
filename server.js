@@ -8,7 +8,7 @@ server.use(express.json());
 server.use(cors());
 
 server.get('/', (req, res) => {
-    return res.send('Server is alive and well.');
+    return res.send('HERE WE GO!');
 })
 
 server.use('/api', apiRouter);
