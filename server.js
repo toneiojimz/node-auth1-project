@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const session = require('express-session');
+const KnexSessionStore = require('connect-session-knex')(session);
 
 const server = express();
 const apiRouter = require('./api/apiRouter.js');
